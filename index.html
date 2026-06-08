@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prestamos de material</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <h1>Préstamos de material del aula</h1>
+
+    <div id="formulario">
+        <h2 id="tituloFormulario">Añadir préstamo</h2>
+
+        <div class="campo">
+            <label for="nombreAlumno">Nombre del alumno</label>
+            <input type="text" id="nombreAlumno" placeholder="Nombre completo">
+        </div>
+
+        <div class="campo">
+            <label for="materialSeleccionado">Material</label>
+            <select id="materialSeleccionado">
+                <option value="">Selecciona el material</option>
+                <option value="Cargador">Cargador</option>
+                <option value="Raton">Raton</option>
+                <option value="Portatil">Portátril</option>
+                <option value="Otros">Otros</option>
+            </select>
+        </div>
+
+        <div class="campo">
+            <label>Turno</label>
+            <div class="radios">
+                <label><input type="radio" name="turnoPrestamo" id="turnoManana" value="Manana"> Mañana</label>
+                <label><input type="radio" name="turnoPrestamo" id="turnoTarde" value="Tarde"> Tarde</label>
+            </div>
+        </div>
+
+        <label class="checkbox-row">
+            <input type="checkbox" id="materialDevuelto">
+            Devuelto
+        </label>
+
+        <div class="botones">
+            <button class="btn-primary" id="botonGuardar" onclick="guardarPrestamo()">Añadir prestamo</button>
+            <button class="btn-secondary" id="botonCancelar" style="display:none" onclick="cancelarEdicion()">Cancelar</button>
+        </div>
+    </div>
+
+    <p id="lista-titulo">Lista de prestamos</p>
+    <div id="contenedorPrestamos"></div>
+
+    <script src="crud.js"></script>
+</body>
+</html>

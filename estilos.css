@@ -1,0 +1,240 @@
+body {
+    font-family: 'IBM Plex Sans', Arial, sans-serif;
+    background: #f4f3f0;
+    padding: 28px 24px;
+    color: #1a1a1a;
+    max-width: 580px;
+}
+
+h1 {
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    color: #1a1a1a;
+    margin: 0 0 1.5rem;
+}
+
+/* Formulario */
+
+#formulario {
+    background: #ffffff;
+    border: 0.5px solid #d0cfc9;
+    border-radius: 10px;
+    padding: 1.25rem;
+    margin-bottom: 1.5rem;
+}
+
+#formulario h2 {
+    font-size: 11px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    color: #888;
+    margin: 0 0 1rem;
+}
+
+.campo {
+    margin-bottom: 0.85rem;
+}
+
+.campo label {
+    display: block;
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 4px;
+}
+
+.campo input[type="text"],
+.campo select {
+    width: 100%;
+    padding: 7px 10px;
+    font-size: 14px;
+    font-family: inherit;
+    background: #f7f6f3;
+    border: 0.5px solid #d0cfc9;
+    border-radius: 6px;
+    color: #1a1a1a;
+    box-sizing: border-box;
+    outline: none;
+    transition: border-color 0.15s;
+}
+
+.campo input[type="text"]:focus,
+.campo select:focus {
+    border-color: #999;
+}
+
+.radios {
+    display: flex;
+    gap: 1.25rem;
+    margin-top: 4px;
+}
+
+.radios label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+    color: #1a1a1a;
+    cursor: pointer;
+}
+
+.checkbox-row {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+    color: #1a1a1a;
+    cursor: pointer;
+}
+
+/* Botones del formulario */
+
+.botones {
+    display: flex;
+    gap: 8px;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 0.5px solid #eae9e5;
+}
+
+.btn-primary {
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 7px 14px;
+    background: #1a1a1a;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: opacity 0.15s;
+}
+
+.btn-primary:hover {
+    opacity: 0.82;
+}
+
+.btn-secondary {
+    font-family: inherit;
+    font-size: 13px;
+    padding: 7px 14px;
+    background: transparent;
+    color: #666;
+    border: 0.5px solid #d0cfc9;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.15s;
+}
+
+.btn-secondary:hover {
+    background: #f4f3f0;
+}
+
+/* Lista */
+
+#lista-titulo {
+    font-size: 11px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    color: #888;
+    margin: 0 0 0.75rem;
+}
+
+.tarjeta {
+    background: #ffffff;
+    border: 0.5px solid #e0dfd9;
+    border-radius: 10px;
+    padding: 1rem 1.25rem;
+    margin-bottom: 8px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2px 1rem;
+}
+
+.tarjeta-fila {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4px;
+}
+
+.tarjeta-label {
+    font-size: 11px;
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.tarjeta-valor {
+    font-size: 14px;
+    color: #1a1a1a;
+}
+
+.badge-devuelto {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 500;
+    padding: 2px 8px;
+    border-radius: 99px;
+    margin-top: 1px;
+}
+
+.badge-si {
+    background: #eaf3de;
+    color: #3b6d11;
+}
+
+.badge-no {
+    background: #fcebeb;
+    color: #a32d2d;
+}
+
+.tarjeta-acciones {
+    grid-column: 1 / -1;
+    display: flex;
+    gap: 6px;
+    margin-top: 8px;
+    padding-top: 8px;
+    border-top: 0.5px solid #eae9e5;
+}
+
+.btn-editar {
+    font-family: inherit;
+    font-size: 12px;
+    padding: 4px 10px;
+    background: transparent;
+    color: #555;
+    border: 0.5px solid #d0cfc9;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.15s;
+}
+
+.btn-editar:hover {
+    background: #f4f3f0;
+}
+
+.btn-borrar {
+    font-family: inherit;
+    font-size: 12px;
+    padding: 4px 10px;
+    background: transparent;
+    color: #a32d2d;
+    border: 0.5px solid #f0b0b0;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.15s;
+}
+
+.btn-borrar:hover {
+    background: #fcebeb;
+}
+
+#mensajeVacio {
+    font-size: 14px;
+    color: #999;
+    font-style: italic;
+    padding: 0.5rem 0;
+    margin: 0;
+}
